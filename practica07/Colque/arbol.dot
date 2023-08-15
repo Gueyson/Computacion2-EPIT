@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="petal width (cm) <= 0.8\nsamples = 120\nvalue = [42, 41, 37]\nclass = s", fillcolor="#fffdfc"] ;
+1 [label="samples = 42\nvalue = [42, 0, 0]\nclass = s", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\nsamples = 78\nvalue = [0, 41, 37]\nclass = e", fillcolor="#ecfcf3"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal lendth (cm) <= 5.05\nsamples = 44\nvalue = [0, 40, 4]\nclass = e", fillcolor="#4de88e"] ;
+2 -> 3 ;
+4 [label="samples = 40\nvalue = [0, 39, 1]\nclass = e", fillcolor="#3ee684"] ;
+3 -> 4 ;
+5 [label="samples = 4\nvalue = [0, 1, 3]\nclass = t", fillcolor="#ab7bee"] ;
+3 -> 5 ;
+6 [label="petal lendth (cm) <= 4.85\nsamples = 34\nvalue = [0, 1, 33]\nclass = t", fillcolor="#853fe6"] ;
+2 -> 6 ;
+7 [label="samples = 2\nvalue = [0, 1, 1]\nclass = e", fillcolor="#ffffff"] ;
+6 -> 7 ;
+8 [label="samples = 32\nvalue = [0, 0, 32]\nclass = t", fillcolor="#8139e5"] ;
+6 -> 8 ;
+}
